@@ -1,1 +1,1017 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Printer-Integrated Mechanical Characterization | Xinyi Yang
+    </title>
+
+    <meta
+        name="description"
+        content="A printer-integrated platform that characterizes the elastic, plastic, and fracture behavior of 3D-printed materials using printer-native motion and camera-based measurement."
+    >
+
+    <link rel="stylesheet" href="../style.css?v=3">
+    <link rel="stylesheet" href="../project.css?v=7">
+</head>
+
+<body class="project-page">
+
+    <main>
+
+        <!-- Compact project introduction -->
+        <header class="detail-hero detail-container">
+
+            <a class="detail-back-link" href="../index.html#projects">
+                ← Back to Engineering Projects
+            </a>
+
+            <div class="detail-hero-grid">
+
+                <!-- Left: Title and introduction -->
+                <div class="detail-hero-copy">
+
+                    <h1>
+                        Mechanical Characterization of 3D-Printed
+                        Materials Using Printer-Native Motion
+                    </h1>
+
+                    <p class="detail-lead">
+                        We transformed a standard FDM 3D printer into a
+                        printer-integrated mechanical testing platform.
+                        Programmed print-head motion excites, bends, and
+                        fractures a printed cantilever, while camera-based
+                        measurements reconstruct its elastic, plastic, and
+                        fracture response without external force sensors
+                        or loading equipment.
+                    </p>
+
+                </div>
+
+                <!-- Right: Main project visual placeholder -->
+                <figure class="detail-hero-media">
+
+                    <div class="visual-placeholder detail-hero-image">
+                        <span>
+                            Printer-integrated testing workflow visual
+                        </span>
+                    </div>
+
+                </figure>
+
+            </div>
+
+        </header>
+
+
+        <!-- Key engineering results -->
+        <section class="detail-stats detail-container">
+
+            <div class="detail-stat">
+                <strong>1 specimen</strong>
+                <span>Elastic, plastic, and fracture response</span>
+            </div>
+
+            <div class="detail-stat">
+                <strong>0.98%</strong>
+                <span>High-throughput stress-strain NRMSE</span>
+            </div>
+
+            <div class="detail-stat">
+                <strong>1.94%</strong>
+                <span>Lattice stiffness prediction error</span>
+            </div>
+
+        </section>
+
+
+        <!-- Engineering Challenge -->
+        <section class="detail-section detail-container">
+
+            <div class="detail-section-heading">
+
+                <p>01</p>
+
+                <h2>
+                    The Engineering Challenge
+                </h2>
+
+            </div>
+
+            <div class="detail-section-content">
+
+                <p>
+                    The mechanical behavior of an FDM-printed part depends
+                    on more than the nominal filament material. Printer
+                    platform, processing conditions, deposition direction,
+                    interlayer bonding, internal voids, and geometric
+                    imperfections all influence its effective response.
+                </p>
+
+                <p>
+                    These properties are normally measured after fabrication
+                    using dedicated mechanical testing equipment. This
+                    separates material qualification from manufacturing and
+                    requires additional specimens, instruments, and manual
+                    testing steps.
+                </p>
+
+                <blockquote>
+                    Can a standard 3D printer use its own motion system to
+                    characterize the parts it produces without external force
+                    sensors or loading instruments?
+                </blockquote>
+
+            </div>
+
+        </section>
+
+
+        <!-- Testing Architecture -->
+        <section class="detail-section detail-container">
+
+            <div class="detail-section-heading">
+
+                <p>02</p>
+
+                <h2>
+                    Printer-Integrated Testing Architecture
+                </h2>
+
+            </div>
+
+            <div class="detail-section-content">
+
+                <p>
+                    A vertically printed cantilever beam remains attached to
+                    the build plate after fabrication. The printer head then
+                    interacts with the beam through a programmed sequence of
+                    excitation, bending, unloading, and fracture.
+                </p>
+
+                <div class="architecture-grid">
+
+                    <!-- Printer-native actuation -->
+                    <article class="architecture-card">
+
+                        <div class="visual-placeholder">
+                            <span>
+                                Printer-head actuation visual
+                            </span>
+                        </div>
+
+                        <h3>
+                            Printer-Native Actuation
+                        </h3>
+
+                        <p class="architecture-subtitle">
+                            Excitation and mechanical loading
+                        </p>
+
+                        <p>
+                            The existing printer motion system applies the
+                            complete mechanical testing sequence.
+                        </p>
+
+                        <ul>
+                            <li>Impulse excitation for free vibration</li>
+                            <li>Controlled displacement for plastic bending</li>
+                            <li>Unloading for residual-shape measurement</li>
+                            <li>Progressive loading until fracture</li>
+                            <li>No external load frame or actuator</li>
+                        </ul>
+
+                    </article>
+
+
+                    <!-- Optical measurement -->
+                    <article class="architecture-card">
+
+                        <div class="visual-placeholder">
+                            <span>
+                                Camera-based measurement visual
+                            </span>
+                        </div>
+
+                        <h3>
+                            Camera-Based Measurement
+                        </h3>
+
+                        <p class="architecture-subtitle">
+                            Motion and geometry tracking
+                        </p>
+
+                        <p>
+                            Optical measurements capture the beam response
+                            during each stage of the testing process.
+                        </p>
+
+                        <ul>
+                            <li>Free-vibration displacement history</li>
+                            <li>Loaded beam geometry</li>
+                            <li>Residual deformation after unloading</li>
+                            <li>Maximum deformation before fracture</li>
+                            <li>Physics-informed response reconstruction</li>
+                        </ul>
+
+                    </article>
+
+                </div>
+
+                <div class="design-flow">
+
+                    <span>Print specimen</span>
+                    <b>→</b>
+                    <span>Excite and bend</span>
+                    <b>→</b>
+                    <span>Track motion and shape</span>
+                    <b>→</b>
+                    <span>Reconstruct response</span>
+
+                </div>
+
+                <div class="visual-placeholder validation-placeholder">
+                    <span>
+                        Complete printer-integrated testing sequence
+                    </span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Mechanical Property Reconstruction -->
+        <section class="detail-section detail-container">
+
+            <div class="detail-section-heading">
+
+                <p>03</p>
+
+                <h2>
+                    Mechanical Property Reconstruction
+                </h2>
+
+            </div>
+
+            <div class="detail-section-content">
+
+                <p>
+                    One printed cantilever is tested sequentially so that
+                    elastic, dissipative, plastic, and fracture behavior can
+                    be obtained from the same specimen.
+                </p>
+
+                <div class="mechanics-metrics">
+
+                    <div class="mechanics-metric">
+
+                        <strong>
+                            E<sub>eff</sub>
+                        </strong>
+
+                        <span>
+                            Effective elastic modulus
+                        </span>
+
+                        <p>
+                            Reconstructed from resonant frequency using
+                            cantilever beam mechanics.
+                        </p>
+
+                    </div>
+
+                    <div class="mechanics-metric">
+
+                        <strong>ζ</strong>
+
+                        <span>
+                            Damping ratio
+                        </span>
+
+                        <p>
+                            Extracted from the decay of the measured
+                            free-vibration response.
+                        </p>
+
+                    </div>
+
+                    <div class="mechanics-metric">
+
+                        <strong>
+                            σ(ε)
+                        </strong>
+
+                        <span>
+                            Post-yield response
+                        </span>
+
+                        <p>
+                            Reconstructed from loaded and residual beam
+                            geometries using curvature and elastoplastic
+                            beam equilibrium.
+                        </p>
+
+                    </div>
+
+                    <div class="mechanics-metric">
+
+                        <strong>
+                            ε<sub>f</sub>
+                        </strong>
+
+                        <span>
+                            Fracture strain
+                        </span>
+
+                        <p>
+                            Calculated from the maximum beam deformation
+                            immediately before failure.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <p>
+                    Because every property is obtained from the same printed
+                    beam, the framework reduces the number of specimens and
+                    preserves a direct connection between fabrication
+                    conditions and measured mechanical behavior.
+                </p>
+
+                <div class="visual-placeholder geometry-placeholder">
+                    <span>
+                        Mechanical property reconstruction visual
+                    </span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Experimental Validation -->
+        <section class="detail-section detail-container">
+
+            <div class="detail-section-heading">
+
+                <p>04</p>
+
+                <h2>
+                    Experimental Validation
+                </h2>
+
+            </div>
+
+            <div class="detail-section-content">
+
+                <p>
+                    The reconstructed properties were compared with
+                    independently printed specimens tested using ASTM D790
+                    three-point bending. Validation covered different beam
+                    geometries, printer platforms, filament systems, and
+                    processing conditions.
+                </p>
+
+                <div class="validation-grid">
+
+                    <!-- Validation 1 -->
+                    <article class="validation-card">
+
+                        <h3>
+                            01.Geometry-Dependent PLA
+                        </h3>
+
+                        <p>
+                            Three PLA cantilever thicknesses were tested to
+                            evaluate whether the reconstruction remained
+                            accurate as specimen geometry changed.
+                        </p>
+
+                        <div class="validation-tags">
+                            <span>1.40 mm</span>
+                            <span>1.82 mm</span>
+                            <span>2.10 mm</span>
+                        </div>
+
+                    </article>
+
+
+                    <!-- Validation 2 -->
+                    <article class="validation-card">
+
+                        <h3>
+                            02.Cross-Printer Validation
+                        </h3>
+
+                        <p>
+                            Bambu PLA specimens were used to verify that
+                            the approach was transferable beyond the
+                            primary Prusa printer platform.
+                        </p>
+
+                        <div class="validation-tags">
+                            <span>Prusa</span>
+                            <span>Bambu</span>
+                            <span>Platform Transferability</span>
+                        </div>
+
+                    </article>
+
+
+                    <!-- Validation 3 -->
+                    <article class="validation-card">
+
+                        <h3>
+                            03.Full PETG Reconstruction
+                        </h3>
+
+                        <p>
+                            PETG specimens were used to validate the complete
+                            elastic, post-yield, and fracture reconstruction
+                            for a second material system.
+                        </p>
+
+                        <div class="validation-tags">
+                            <span>Modulus</span>
+                            <span>Stress-Strain Response</span>
+                            <span>Fracture Strain</span>
+                        </div>
+
+                    </article>
+
+
+                    <!-- Validation 4 -->
+                    <article class="validation-card">
+
+                        <h3>
+                            04.Additional Filament Systems
+                        </h3>
+
+                        <p>
+                            Resonance-based modulus and damping measurements
+                            were extended to recycled PET, TPU, and a
+                            PETG-TPU blend.
+                        </p>
+
+                        <div class="validation-tags">
+                            <span>Recycled PET</span>
+                            <span>TPU</span>
+                            <span>PETG-TPU Blend</span>
+                        </div>
+
+                    </article>
+
+
+                    <!-- Validation 5 -->
+                    <article class="validation-card validation-card-wide">
+
+                        <h3>
+                            05.Printing-Parameter Sensitivity
+                        </h3>
+
+                        <p>
+                            The method was used to resolve changes in effective
+                            stiffness and damping caused by nozzle temperature,
+                            mass deposition rate, layer height, and printing
+                            orientation across 12 unique processing conditions.
+                        </p>
+
+                        <div class="validation-result">
+                            3 printer-integrated specimens and 3 ASTM reference
+                            specimens per processing condition
+                        </div>
+
+                        <div class="validation-tags">
+                            <span>Nozzle Temperature</span>
+                            <span>Mass Deposition Rate</span>
+                            <span>Layer Height</span>
+                            <span>Printing Orientation</span>
+                        </div>
+
+                    </article>
+
+                </div>
+
+                <div class="design-example">
+
+                    <div>
+                        <strong>0.61%</strong>
+                        <span>Lowest stress-strain NRMSE</span>
+                    </div>
+
+                    <div>
+                        <strong>3.64%</strong>
+                        <span>Highest stress-strain NRMSE</span>
+                    </div>
+
+                    <div>
+                        <strong>ASTM D790</strong>
+                        <span>Independent reference testing</span>
+                    </div>
+
+                </div>
+
+                <div class="visual-placeholder validation-placeholder">
+                    <span>
+                        Printer-integrated and ASTM validation results
+                    </span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- High-Throughput Testing -->
+        <section class="detail-section detail-container">
+
+            <div class="detail-section-heading">
+
+                <p>05</p>
+
+                <h2>
+                    Automated High-Throughput Testing
+                </h2>
+
+            </div>
+
+            <div class="detail-section-content">
+
+                <p>
+                    The platform increases testing throughput at both the
+                    individual specimen level and the build-plate level.
+                </p>
+
+                <div class="demonstration-grid">
+
+                    <!-- Demonstration 1 -->
+                    <article class="demonstration-card">
+
+                        <div class="visual-placeholder demonstration-visual">
+                            <span>
+                                Single-specimen testing sequence
+                            </span>
+                        </div>
+
+                        <div class="demonstration-content">
+
+                            <span class="demonstration-number">
+                                01
+                            </span>
+
+                            <h3>
+                                One Specimen, Multiple Properties
+                            </h3>
+
+                            <p>
+                                Resonance, plastic bending, unloading, and
+                                fracture are performed sequentially on one
+                                printed beam, eliminating separate specimens
+                                for each mechanical property.
+                            </p>
+
+                            <div class="demonstration-values">
+                                <span>Effective modulus</span>
+                                <span>Damping ratio</span>
+                                <span>Stress-strain response</span>
+                                <span>Fracture strain</span>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Demonstration 2 -->
+                    <article class="demonstration-card">
+
+                        <div class="visual-placeholder demonstration-visual">
+                            <span>
+                                Automated build-plate testing
+                            </span>
+                        </div>
+
+                        <div class="demonstration-content">
+
+                            <span class="demonstration-number">
+                                02
+                            </span>
+
+                            <h3>
+                                Sequential Build-Plate Testing
+                            </h3>
+
+                            <p>
+                                Multiple specimens are printed together and
+                                addressed sequentially by the printer head
+                                without manual transfer or repositioning.
+                            </p>
+
+                            <div class="demonstration-values">
+                                <span>High-throughput NRMSE: 0.98%</span>
+                                <span>Standard-test NRMSE: 0.99%</span>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+                <p>
+                    The nearly unchanged reconstruction error showed that
+                    automated sequential testing increased throughput without
+                    a measurable loss of accuracy in the reconstructed plastic
+                    response.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Structural Design -->
+        <section class="detail-section detail-container">
+
+            <div class="detail-section-heading">
+
+                <p>06</p>
+
+                <h2>
+                    Material-Aware Structural Design
+                </h2>
+
+            </div>
+
+            <div class="detail-section-content">
+
+                <p>
+                    Material properties reconstructed directly by the printer
+                    were used as inputs for analytical and finite-element
+                    models. The resulting predictions were then validated
+                    using three functional structures operating in different
+                    mechanical regimes.
+                </p>
+
+                <div class="demonstration-grid">
+
+                    <!-- Structure 1 -->
+                    <article class="demonstration-card">
+
+                        <div class="visual-placeholder demonstration-visual">
+                            <span>
+                                Load-bearing lattice structure
+                            </span>
+                        </div>
+
+                        <div class="demonstration-content">
+
+                            <span class="demonstration-number">
+                                01
+                            </span>
+
+                            <h3>
+                                Load-Bearing Lattice
+                            </h3>
+
+                            <p>
+                                The reconstructed elastic modulus was used to
+                                predict the compressive stiffness of a
+                                hexagonal lattice structure.
+                            </p>
+
+                            <div class="demonstration-values">
+                                <span>Predicted: 158 N/mm</span>
+                                <span>Measured: 155 N/mm</span>
+                                <span>Difference: 1.94%</span>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Structure 2 -->
+                    <article class="demonstration-card">
+
+                        <div class="visual-placeholder demonstration-visual">
+                            <span>
+                                Buckling structure
+                            </span>
+                        </div>
+
+                        <div class="demonstration-content">
+
+                            <span class="demonstration-number">
+                                02
+                            </span>
+
+                            <h3>
+                                Instability-Driven Structure
+                            </h3>
+
+                            <p>
+                                Reconstructed elastic and yield behavior was
+                                used to predict the critical buckling load
+                                and deformation mode of a square frame.
+                            </p>
+
+                            <div class="demonstration-values">
+                                <span>Predicted: 137.37 N</span>
+                                <span>Measured: 125 N</span>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Structure 3 -->
+                    <article class="demonstration-card">
+
+                        <div class="visual-placeholder demonstration-visual">
+                            <span>
+                                Shock-protection structure
+                            </span>
+                        </div>
+
+                        <div class="demonstration-content">
+
+                            <span class="demonstration-number">
+                                03
+                            </span>
+
+                            <h3>
+                                Shock-Protection Structure
+                            </h3>
+
+                            <p>
+                                The reconstructed stress-strain response was
+                                used to estimate the energy absorption and
+                                maximum drop height of a compliant landing
+                                structure.
+                            </p>
+
+                            <div class="demonstration-values">
+                                <span>Predicted threshold: 0.255 m</span>
+                                <span>Safe landing: 0.2 m</span>
+                                <span>Failure: 0.3 m</span>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- My Contribution -->
+        <section class="detail-section detail-container">
+
+            <div class="detail-section-heading">
+
+                <p>07</p>
+
+                <h2>
+                    My Contribution
+                </h2>
+
+            </div>
+
+            <div class="detail-section-content">
+
+                <p>
+                    As the first-listed equal-contribution author and a lead
+                    experimental researcher, I worked across experimental
+                    implementation, validation, data analysis, visualization,
+                    mechanical interpretation, and publication.
+                </p>
+
+                <div class="contribution-grid">
+
+                    <div class="contribution-item">
+                        <p>
+                            01 Developed and implemented the printer-integrated
+                            experimental testing workflow.
+                        </p>
+                    </div>
+
+                    <div class="contribution-item">
+                        <p>
+                            02 Fabricated test specimens and conducted
+                            free-vibration, plastic-bending, unloading, and
+                            fracture experiments.
+                        </p>
+                    </div>
+
+                    <div class="contribution-item">
+                        <p>
+                            03 Conducted validation across beam geometries,
+                            materials, printer platforms, and processing
+                            conditions.
+                        </p>
+                    </div>
+
+                    <div class="contribution-item">
+                        <p>
+                            04 Performed ASTM D790 three-point-bending tests
+                            and compared the results with printer-integrated
+                            reconstruction.
+                        </p>
+                    </div>
+
+                    <div class="contribution-item">
+                        <p>
+                            05 Developed and executed the automated
+                            high-throughput build-plate experiments.
+                        </p>
+                    </div>
+
+                    <div class="contribution-item">
+                        <p>
+                            06 Analyzed and visualized the experimental data
+                            and contributed to the theoretical interpretation
+                            of the reconstructed response.
+                        </p>
+                    </div>
+
+                    <div class="contribution-item">
+                        <p>
+                            07 Contributed to the functional-structure
+                            predictions and completed the experimental
+                            validation demonstrations.
+                        </p>
+                    </div>
+
+                    <div class="contribution-item">
+                        <p>
+                            08 Co-wrote the first manuscript draft and am a
+                            co-inventor on the related pending patent
+                            application.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Engineering Outcomes and Tools -->
+        <section class="detail-section detail-container">
+
+            <div class="detail-section-heading">
+
+                <p>08</p>
+
+                <h2>
+                    Engineering Outcomes and Tools
+                </h2>
+
+            </div>
+
+            <div class="detail-section-content">
+
+                <div class="outcomes-tools-grid">
+
+                    <!-- Engineering outcomes -->
+                    <div class="outcomes-column">
+
+                        <h3>
+                            Engineering Outcomes
+                        </h3>
+
+                        <ul class="outcomes-list">
+
+                            <li>
+                                Integrated material characterization directly
+                                into the additive-manufacturing workflow.
+                            </li>
+
+                            <li>
+                                Reconstructed elastic, plastic, and fracture
+                                response without external force sensors.
+                            </li>
+
+                            <li>
+                                Obtained multiple mechanical properties from
+                                a single printed specimen.
+                            </li>
+
+                            <li>
+                                Automated sequential testing of multiple
+                                specimens on one build plate.
+                            </li>
+
+                            <li>
+                                Validated the method across materials,
+                                geometries, printers, and processing
+                                conditions.
+                            </li>
+
+                            <li>
+                                Used fabrication-derived properties to predict
+                                functional structural performance.
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+                    <!-- Tools and methods -->
+                    <div class="tools-column">
+
+                        <h3>
+                            Tools and Methods
+                        </h3>
+
+                        <div class="tool-tags">
+
+                            <span>FDM Additive Manufacturing</span>
+                            <span>Printer Motion Programming</span>
+                            <span>Free-Vibration Testing</span>
+                            <span>High-Speed Imaging</span>
+                            <span>Computer Vision</span>
+                            <span>Cantilever Beam Mechanics</span>
+                            <span>Elastoplastic Reconstruction</span>
+                            <span>ASTM D790 Testing</span>
+                            <span>Instron Three-Point Bending</span>
+                            <span>Experimental Automation</span>
+                            <span>Mechanical Data Analysis</span>
+                            <span>Finite-Element Validation</span>
+                            <span>Functional Prototype Testing</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Manuscript -->
+                <div class="publication-panel">
+
+                    <div class="publication-information">
+
+                        <span class="publication-label">
+                            Manuscript
+                        </span>
+
+                        <h3>
+                            Mechanical Characterization of 3D-Printed
+                            Materials Using Printer-Native Motion
+                        </h3>
+
+                        <p>
+                            Xinyi Yang, Xiaochen Li, Victor Riera Naranjo,
+                            Chuqi Sun, Cole V. Zachry, Dhanyaa Rajan,
+                            Christos E. Athanasiou, and Bolei Deng
+                        </p>
+
+                        <p>
+                            Manuscript, 2026
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="detail-footer">
+
+        <div class="detail-container">
+
+            <a class="detail-back-link" href="../index.html#projects">
+                ← Back to Engineering Projects
+            </a>
+
+            <p>© 2026 Xinyi Yang</p>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
