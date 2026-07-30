@@ -240,7 +240,7 @@ img {
     height: 185px;
     display: block;
     object-fit: cover;
-    object-position: center;
+    object-position: center 42%;
     transition: transform 250ms ease;
 }
 
