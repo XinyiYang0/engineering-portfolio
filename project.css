@@ -440,6 +440,72 @@
     aspect-ratio: 16 / 4;
 }
 
+/* System demonstrations */
+
+.demonstration-grid {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.demonstration-card {
+    min-width: 0;
+    overflow: hidden;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 5px;
+}
+
+.demonstration-visual {
+    border: 0;
+    border-bottom: 1px dashed #b9b9b3;
+    border-radius: 0;
+    aspect-ratio: 16 / 7;
+}
+
+.demonstration-content {
+    padding: 14px;
+}
+
+.demonstration-number {
+    display: block;
+    margin-bottom: 6px;
+    color: var(--accent);
+    font-size: 0.62rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+
+.demonstration-card h3 {
+    margin: 0;
+    font-size: 1.05rem;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+}
+
+.demonstration-card p {
+    margin: 9px 0 0;
+    color: var(--text-secondary);
+    font-size: 0.76rem;
+    line-height: 1.42;
+}
+
+.demonstration-values {
+    margin-top: 11px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.demonstration-values span {
+    padding: 4px 7px;
+    background: #eaf0f5;
+    border-radius: 3px;
+    color: var(--accent);
+    font-size: 0.63rem;
+    font-weight: 700;
+}
 /* Footer */
 
 .detail-footer {
@@ -505,6 +571,10 @@
 
     .validation-placeholder {
         aspect-ratio: 16 / 8;
+    }
+
+    .demonstration-grid {
+        grid-template-columns: 1fr;
     }
 
     .design-example {
