@@ -506,6 +506,137 @@
     font-size: 0.63rem;
     font-weight: 700;
 }
+
+/* My contribution */
+
+.contribution-grid {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    border-top: 1px solid var(--border);
+    border-left: 1px solid var(--border);
+}
+
+.contribution-item {
+    min-width: 0;
+    padding: 13px;
+    display: grid;
+    grid-template-columns: 24px minmax(0, 1fr);
+    gap: 9px;
+    border-right: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    background: var(--surface);
+}
+
+.contribution-item span {
+    color: var(--accent);
+    font-size: 0.62rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+}
+
+.contribution-item p {
+    margin: 0;
+    color: var(--text-secondary);
+    font-size: 0.76rem;
+    line-height: 1.42;
+}
+
+
+/* Engineering outcomes and tools */
+
+.outcomes-tools-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px;
+}
+
+.outcomes-column h3,
+.tools-column h3 {
+    margin: 0 0 14px;
+    font-size: 1.15rem;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+}
+
+.outcomes-list {
+    margin: 0;
+    padding-left: 18px;
+    color: var(--text-secondary);
+}
+
+.outcomes-list li {
+    margin-bottom: 8px;
+    font-size: 0.78rem;
+    line-height: 1.42;
+}
+
+.outcomes-list li:last-child {
+    margin-bottom: 0;
+}
+
+.tool-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.tool-tags span {
+    padding: 5px 8px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    color: var(--text-secondary);
+    font-size: 0.65rem;
+    font-weight: 700;
+}
+
+
+/* Publication panel */
+
+.publication-panel {
+    margin-top: 28px;
+    padding: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 28px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 5px;
+}
+
+.publication-information {
+    min-width: 0;
+}
+
+.publication-label {
+    display: block;
+    margin-bottom: 7px;
+    color: var(--accent);
+    font-size: 0.62rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.publication-information h3 {
+    margin: 0;
+    font-size: 1.05rem;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+}
+
+.publication-information p {
+    margin: 7px 0 0;
+    color: var(--text-secondary);
+    font-size: 0.7rem;
+    line-height: 1.4;
+}
+
+.publication-panel .detail-button {
+    flex: 0 0 auto;
+}
 /* Footer */
 
 .detail-footer {
@@ -567,6 +698,20 @@
 
     .validation-card-wide {
         grid-column: auto;
+    }
+
+        .contribution-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .outcomes-tools-grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .publication-panel {
+        align-items: flex-start;
+        flex-direction: column;
     }
 
     .validation-placeholder {
