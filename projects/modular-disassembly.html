@@ -10,31 +10,142 @@
     >
 
     <title>
-        Modular Disassembly | Xinyi Yang
+        Remote Disassembly of Electronics-Free Modular Structures | Xinyi Yang
     </title>
 
+    <meta
+        name="description"
+        content="A load-bearing modular structural system that selectively disassembles using a single remote vibration source without onboard electronics."
+    >
+
+    <!-- Shared website styles -->
     <link rel="stylesheet" href="../style.css?v=3">
+
+    <!-- Project detail page styles -->
+    <link rel="stylesheet" href="../project.css?v=1">
 </head>
 
-<body>
+<body class="project-page">
 
-    <main class="container">
+    <main>
 
-        <p>
-            <a href="../index.html">
+        <!-- Project hero -->
+        <header class="detail-hero detail-container">
+
+            <a class="detail-back-link" href="../index.html#projects">
                 ← Back to Engineering Projects
             </a>
-        </p>
 
-        <h1>
-            Remote Disassembly of Electronics-Free Modular Structures
-        </h1>
+            <h1>
+                Remote Disassembly of Electronics-Free Modular Structures
+            </h1>
 
-        <p>
-            Project detail page under construction.
-        </p>
+            <p class="detail-lead">
+                We developed a load-bearing modular structural system that
+                can selectively disassemble without onboard electronics.
+                A single remote vibration source transmits a mechanical
+                signal through the assembled structure, while connector
+                geometry determines when and how each connection releases.
+            </p>
+
+            <div class="detail-links">
+
+                <a
+                    class="detail-button detail-button-primary"
+                    href="https://www.nature.com/articles/s41467-026-72722-z"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    View Publication ↗
+                </a>
+
+            </div>
+
+            <!-- Main project GIF -->
+            <figure class="detail-hero-media">
+
+                <img
+                    src="../assets/disassembly.gif"
+                    alt="Modular structure selectively disassembling in response to remote vibration"
+                    class="detail-hero-image"
+                >
+
+            </figure>
+
+        </header>
+
+
+        <!-- Key engineering results -->
+        <section class="detail-stats detail-container">
+
+            <div class="detail-stat">
+                <strong>315.3 N</strong>
+                <span>Peak compressive load</span>
+            </div>
+
+            <div class="detail-stat">
+                <strong>1,380×</strong>
+                <span>Module weight supported</span>
+            </div>
+
+            <div class="detail-stat">
+                <strong>1 source</strong>
+                <span>Controls multiple release events</span>
+            </div>
+
+        </section>
+
+
+        <!-- Engineering Challenge -->
+        <section class="detail-section detail-container">
+
+            <div class="detail-section-heading">
+                <p>01</p>
+                <h2>The Engineering Challenge</h2>
+            </div>
+
+            <div class="detail-section-content">
+
+                <p>
+                    A reconfigurable modular structure needs its connections
+                    to perform two seemingly conflicting functions.
+                </p>
+
+                <p>
+                    First, the connections must remain mechanically stable
+                    during assembly, transportation, and load-bearing
+                    operation. Second, selected connections must release
+                    on command without requiring a motor, controller,
+                    sensor, or power source at every joint.
+                </p>
+
+                <blockquote>
+                    Can the mechanical behavior of a connector be programmed
+                    through geometry so that it remains stable under normal
+                    loading but releases when a remote vibration signal
+                    reaches a designed threshold?
+                </blockquote>
+
+            </div>
+
+        </section>
 
     </main>
+
+
+    <footer class="detail-footer">
+
+        <div class="detail-container">
+
+            <a class="detail-back-link" href="../index.html#projects">
+                ← Back to Engineering Projects
+            </a>
+
+            <p>© 2026 Xinyi Yang</p>
+
+        </div>
+
+    </footer>
 
 </body>
 
