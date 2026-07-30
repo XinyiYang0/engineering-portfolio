@@ -268,6 +268,102 @@
     margin-bottom: 0;
 }
 
+/* Programming mechanical behavior */
+
+.mechanics-metrics {
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.mechanics-metric {
+    padding: 15px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 5px;
+}
+
+.mechanics-metric strong {
+    display: block;
+    color: var(--accent);
+    font-size: 1.8rem;
+    line-height: 1;
+}
+
+.mechanics-metric span {
+    display: block;
+    margin-top: 7px;
+    color: var(--text-primary);
+    font-size: 0.78rem;
+    font-weight: 700;
+}
+
+.mechanics-metric p {
+    margin: 6px 0 0;
+    font-size: 0.76rem;
+    line-height: 1.4;
+}
+
+.design-example {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+.design-example > div {
+    padding: 14px;
+}
+
+.design-example > div + div {
+    border-left: 1px solid var(--border);
+}
+
+.design-example strong {
+    display: block;
+    color: var(--accent);
+    font-size: 1.25rem;
+    line-height: 1;
+}
+
+.design-example span {
+    display: block;
+    margin-top: 6px;
+    color: var(--text-secondary);
+    font-size: 0.7rem;
+    line-height: 1.35;
+}
+
+.design-flow {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.design-flow span {
+    padding: 7px 10px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    color: var(--text-primary);
+    font-size: 0.72rem;
+    font-weight: 700;
+}
+
+.design-flow b {
+    color: var(--accent);
+    font-size: 0.85rem;
+}
+
+.geometry-placeholder {
+    margin-top: 20px;
+    aspect-ratio: 16 / 5;
+}
+
 /* Footer */
 
 .detail-footer {
@@ -317,6 +413,27 @@
 
     .architecture-grid {
         grid-template-columns: 1fr;
+    }
+
+        .mechanics-metrics {
+        grid-template-columns: 1fr;
+    }
+
+    .design-example {
+        grid-template-columns: 1fr;
+    }
+
+    .design-example > div + div {
+        border-top: 1px solid var(--border);
+        border-left: 0;
+    }
+
+    .design-flow b {
+        display: none;
+    }
+
+    .geometry-placeholder {
+        aspect-ratio: 16 / 8;
     }
 
     .detail-hero-grid {
