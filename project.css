@@ -364,6 +364,82 @@
     aspect-ratio: 16 / 5;
 }
 
+/* Design and validation process */
+
+.validation-grid {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.validation-card {
+    min-width: 0;
+    padding: 15px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 5px;
+}
+
+.validation-card-wide {
+    grid-column: 1 / -1;
+}
+
+.validation-number {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--accent);
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+
+.validation-card h3 {
+    margin: 0;
+    font-size: 1.05rem;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+}
+
+.validation-card p {
+    margin: 9px 0 0;
+    color: var(--text-secondary);
+    font-size: 0.78rem;
+    line-height: 1.45;
+}
+
+.validation-result {
+    margin-top: 10px;
+    padding: 7px 9px;
+    background: #eaf0f5;
+    color: var(--accent);
+    font-size: 0.7rem;
+    font-weight: 700;
+    line-height: 1.35;
+}
+
+.validation-tags {
+    margin-top: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.validation-tags span {
+    padding: 4px 7px;
+    background: var(--background);
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    color: var(--text-secondary);
+    font-size: 0.62rem;
+    font-weight: 700;
+}
+
+.validation-placeholder {
+    margin-top: 18px;
+    aspect-ratio: 16 / 4;
+}
+
 /* Footer */
 
 .detail-footer {
@@ -417,6 +493,18 @@
 
         .mechanics-metrics {
         grid-template-columns: 1fr;
+    }
+
+        .validation-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .validation-card-wide {
+        grid-column: auto;
+    }
+
+    .validation-placeholder {
+        aspect-ratio: 16 / 8;
     }
 
     .design-example {
