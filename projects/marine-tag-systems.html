@@ -1,0 +1,1214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Marine Tag Attachment and Release Systems | Xinyi Yang
+    </title>
+
+    <meta
+        name="description"
+        content="Development and high-pressure testing of passive vacuum regeneration and controlled release systems for marine mammal tags."
+    >
+
+    <link rel="stylesheet" href="../style.css?v=3">
+    <link rel="stylesheet" href="../project.css?v=7">
+</head>
+
+<body class="project-page">
+
+    <main>
+
+        <!-- Compact project introduction -->
+        <header class="detail-hero detail-container">
+
+            <a class="detail-back-link" href="../index.html#projects">
+                ← Back to Engineering Projects
+            </a>
+
+            <div class="detail-hero-grid">
+
+                <!-- Left: Title and introduction -->
+                <div class="detail-hero-copy">
+
+                    <h1>
+                        Passive Vacuum Regeneration and Controlled
+                        Release for Marine Mammal Tags
+                    </h1>
+
+                    <p class="detail-lead">
+                        Marine mammal tags must remain securely attached
+                        long enough to collect behavioral and acoustic data,
+                        but they must also release safely at the end of
+                        deployment. For Project CETI, I developed and tested
+                        early pressure-driven vacuum-regeneration prototypes
+                        and compact burn-wire release concepts for these two
+                        hardware requirements.
+                    </p>
+
+                    <div class="detail-links">
+
+                        <a
+                            class="detail-button detail-button-primary"
+                            href="https://doi.org/10.1109/JOE.2025.3595607"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            View Publication ↗
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- Right: Main project visual placeholder -->
+                <figure class="detail-hero-media">
+
+                    <div class="visual-placeholder detail-hero-image">
+                        <span>
+                            Marine tag attachment system visual
+                        </span>
+                    </div>
+
+                </figure>
+
+            </div>
+
+        </header>
+
+
+        <!-- Key engineering results -->
+        <section class="detail-stats detail-container">
+
+            <div class="detail-stat">
+                <strong>900 psi</strong>
+                <span>Maximum prototype test pressure</span>
+            </div>
+
+            <div class="detail-stat">
+                <strong>3 volumes</strong>
+                <span>Syringe configurations compared</span>
+            </div>
+
+            <div class="detail-stat">
+                <strong>2 systems</strong>
+                <span>Attachment retention and controlled release</span>
+            </div>
+
+        </section>
+
+
+        <!-- Engineering Challenge -->
+        <section class="detail-section detail-container">
+
+            <div class="detail-section-heading">
+
+                <p>01</p>
+
+                <h2>
+                    The Engineering Challenge
+                </h2>
+
+            </div>
+
+            <div class="detail-section-content">
+
+                <p>
+                    Marine mammal tags collect acoustic and behavioral data
+                    without requiring invasive attachment. Suction cups make
+                    this possible, but small leaks caused by skin texture,
+                    skin shedding, hydrodynamic loading, and animal movement
+                    gradually reduce the vacuum and shorten deployment time.
+                </p>
+
+                <p>
+                    Once data collection is complete, the tag must also
+                    detach reliably. The complete system therefore needs
+                    to maintain suction during deployment while providing
+                    a predictable release mechanism at the end.
+                </p>
+
+                <blockquote>
+                    Can environmental pressure changes during a whale dive
+                    be used to restore suction without consuming the tag's
+                    limited battery capacity?
+                </blockquote>
+
+            </div>
+
+        </section>
+
+
+        <!-- System Architecture -->
+        <section class="detail-section detail-container">
+
+            <div class="detail-section-heading">
+
+                <p>02</p>
+
+                <h2>
+                    Marine Tag System Architecture
+                </h2>
+
+            </div>
+
+            <div class="detail-section-content">
+
+                <p>
+                    The project addressed two complementary functions within
+                    a marine tag: extending suction-cup attachment and
+                    releasing the tag after data collection.
+                </p>
+
+                <div class="architecture-grid">
+
+                    <!-- Vacuum regeneration -->
+                    <article class="architecture-card">
+
+                        <div class="visual-placeholder">
+                            <span>
+                                Vacuum-regeneration system visual
+                            </span>
+                        </div>
+
+                        <h3>
+                            Vacuum Regeneration
+                        </h3>
+
+                        <p class="architecture-subtitle">
+                            Extend attachment duration
+                        </p>
+
+                        <p>
+                            A pressure-responsive pneumatic mechanism uses
+                            hydrostatic pressure changes during repeated dives
+                            to remove fluid from the suction cup and restore
+                            its internal vacuum.
+                        </p>
+
+                        <ul>
+                            <li>Powered by environmental pressure changes</li>
+                            <li>No continuously powered vacuum pump</li>
+                            <li>Pneumatic chambers create piston motion</li>
+                            <li>One-way valves control fluid transfer</li>
+                            <li>Repeated dive cycles increase suction</li>
+                        </ul>
+
+                    </article>
+
+
+                    <!-- Controlled release -->
+                    <article class="architecture-card">
+
+                        <div class="visual-placeholder">
+                            <span>
+                                Burn-wire release system visual
+                            </span>
+                        </div>
+
+                        <h3>
+                            Burn-Wire Release
+                        </h3>
+
+                        <p class="architecture-subtitle">
+                            Controlled end-of-deployment release
+                        </p>
+
+                        <p>
+                            A replaceable burn-wire element provides a
+                            compact method for disconnecting the tag from
+                            the suction-cup attachment system.
+                        </p>
+
+                        <ul>
+                            <li>Compact electrically activated release</li>
+                            <li>Operation in saltwater</li>
+                            <li>Replaceable sacrificial element</li>
+                            <li>Controlled failure location</li>
+                            <li>Integration with the existing tag body</li>
+                        </ul>
+
+                    </article>
+
+                </div>
+
+                <div class="design-flow">
+
+                    <span>Attach tag</span>
+                    <b>→</b>
+                    <span>Regenerate vacuum</span>
+                    <b>→</b>
+                    <span>Collect data</span>
+                    <b>→</b>
+                    <span>Release tag</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Vacuum Regeneration Principle -->
+        <section class="detail-section detail-container">
+
+            <div class="detail-section-heading">
+
+                <p>03</p>
+
+                <h2>
+                    Passive Vacuum Regeneration
+                </h2>
+
+            </div>
+
+            <div class="detail-section-content">
+
+                <p>
+                    Sperm whales repeatedly travel between the ocean surface
+                    and deep water. These dives create large external-pressure
+                    changes that can be converted into mechanical piston
+                    motion.
+                </p>
+
+                <p>
+                    The early prototypes used linked syringe chambers to
+                    investigate how piston orientation, chamber volume, and
+                    pressure cycling affected suction-cup behavior.
+                </p>
+
+                <div class="mechanics-metrics">
+
+                    <div class="mechanics-metric">
+
+                        <strong>
+                            P<sub>ext</sub>
+                        </strong>
+
+                        <span>
+                            External hydrostatic pressure
+                        </span>
+
+                        <p>
+                            Provides the environmental input that drives
+                            piston displacement during descent and ascent.
+                        </p>
+
+                    </div>
+
+                    <div class="mechanics-metric">
+
+                        <strong>
+                            V<sub>s</sub>
+                        </strong>
+
+                        <span>
+                            Pneumatic chamber volume
+                        </span>
+
+                        <p>
+                            Influences piston motion and the amount of fluid
+                            transferred during each pressure cycle.
+                        </p>
+
+                    </div>
+
+                    <div class="mechanics-metric">
+
+                        <strong>
+                            ΔP<sub>cup</sub>
+                        </strong>
+
+                        <span>
+                            Suction-cup pressure difference
+                        </span>
+
+                        <p>
+                            Quantifies the regenerated vacuum and resulting
+                            attachment performance.
+                        </p>
+
+                    </div>
+
+                    <div class="mechanics-metric">
+
+                        <strong>
+                            N
+                        </strong>
+
+                        <span>
+                            Number of pressure cycles
+                        </span>
+
+                        <p>
+                            Repeated dives allow the system to progressively
+                            restore vacuum.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="design-flow">
+
+                    <span>Dive pressure changes</span>
+                    <b>→</b>
+                    <span>Pistons move</span>
+                    <b>→</b>
+                    <span>Fluid is transferred</span>
+                    <b>→</b>
+                    <span>Vacuum is restored</span>
+
+                </div>
+
+                <div class="visual-placeholder geometry-placeholder">
+                    <span>
+                        Pressure-driven operating principle
+                    </span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Prototype Development -->
+        <section class="detail-section detail-container">
+
+            <div class="detail-section-heading">
+
+                <p>04</p>
+
+                <h2>
+                    Prototype Development and Pressure Testing
+                </h2>
+
+            </div>
+
+            <div class="detail-section-content">
+
+                <p>
+                    I translated the existing pressure-driven concept into
+                    testable syringe-based prototypes and developed a sequence
+                    of experiments to compare system configurations under
+                    controlled high-pressure cycles.
+                </p>
+
+                <div class="validation-grid">
+
+                    <!-- Test 1 -->
+                    <article class="validation-card">
+
+                        <h3>
+                            01.Same-Direction Pistons
+                        </h3>
+
+                        <p>
+                            Syringe pistons were arranged in the same
+                            direction to observe how both chambers responded
+                            when external pressure increased and decreased.
+                        </p>
+
+                        <div class="validation-tags">
+                            <span>Pneumatic Assembly</span>
+                            <span>Configuration Testing</span>
+                        </div>
+
+                    </article>
+
+
+                    <!-- Test 2 -->
+                    <article class="validation-card">
+
+                        <h3>
+                            02.Opposite-Direction Pistons
+                        </h3>
+
+                        <p>
+                            The piston orientation was reversed to examine
+                            whether the system retained greater suction-cup
+                            contact after the pressure cycle.
+                        </p>
+
+                        <div class="validation-tags">
+                            <span>Design Comparison</span>
+                            <span>Contact-Area Observation</span>
+                        </div>
+
+                    </article>
+
+
+                    <!-- Test 3 -->
+                    <article class="validation-card">
+
+                        <h3>
+                            03.With and Without Regeneration
+                        </h3>
+
+                        <p>
+                            Paired suction cups were tested under the same
+                            pressure history to compare the prototype against
+                            a cup without a regeneration system.
+                        </p>
+
+                        <div class="validation-tags">
+                            <span>Controlled Comparison</span>
+                            <span>System Validation</span>
+                        </div>
+
+                    </article>
+
+
+                    <!-- Test 4 -->
+                    <article class="validation-card">
+
+                        <h3>
+                            04.Chamber-Volume Comparison
+                        </h3>
+
+                        <p>
+                            Prototypes using 1, 3, and 5 mL syringes were
+                            compared. Larger chambers improved retained
+                            contact area, with limited additional improvement
+                            between the 3 and 5 mL configurations.
+                        </p>
+
+                        <div class="validation-tags">
+                            <span>1 mL</span>
+                            <span>3 mL</span>
+                            <span>5 mL</span>
+                        </div>
+
+                    </article>
+
+
+                    <!-- Test 5 -->
+                    <article class="validation-card validation-card-wide">
+
+                        <h3>
+                            05.High-Pressure Cycle Testing
+                        </h3>
+
+                        <p>
+                            The assembled prototypes were placed inside a
+                            pressure vessel and exposed to repeated pressure
+                            cycles from ambient conditions to 900 psi.
+                        </p>
+
+                        <div class="validation-result">
+                            Maximum prototype test pressure: 900 psi
+                        </div>
+
+                        <div class="validation-tags">
+                            <span>Pressure Vessel</span>
+                            <span>Repeated Cycling</span>
+                            <span>Underwater Observation</span>
+                            <span>Prototype Reliability</span>
+                        </div>
+
+                    </article>
+
+                </div>
+
+                <div class="visual-placeholder validation-placeholder">
+                    <span>
+                        Syringe prototypes and high-pressure test setup
+                    </span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Pressure Measurement -->
+        <section class="detail-section detail-container">
+
+            <div class="detail-section-heading">
+
+                <p>05</p>
+
+                <h2>
+                    Pressure Measurement and Design Comparison
+                </h2>
+
+            </div>
+
+            <div class="detail-section-content">
+
+                <p>
+                    Initial prototype evaluation relied on visible changes
+                    in suction-cup contact area. I then integrated a pressure
+                    sensor so that the system response could be evaluated
+                    quantitatively.
+                </p>
+
+                <div class="architecture-grid">
+
+                    <!-- Instrumentation -->
+                    <article class="architecture-card">
+
+                        <div class="visual-placeholder">
+                            <span>
+                                Pressure-sensor setup
+                            </span>
+                        </div>
+
+                        <h3>
+                            Sensor Integration
+                        </h3>
+
+                        <p class="architecture-subtitle">
+                            Convert voltage into pressure
+                        </p>
+
+                        <p>
+                            The pressure sensor was connected to the syringe
+                            and suction system through tubing and a valve,
+                            allowing pressure changes to be measured before
+                            and after cycling.
+                        </p>
+
+                        <ul>
+                            <li>Pressure-sensor calibration</li>
+                            <li>Voltage-to-pressure conversion</li>
+                            <li>Tube and valve integration</li>
+                            <li>Before-and-after measurement</li>
+                            <li>Leak and connection inspection</li>
+                        </ul>
+
+                    </article>
+
+
+                    <!-- Cycle test -->
+                    <article class="architecture-card">
+
+                        <div class="visual-placeholder">
+                            <span>
+                                Five-cycle pressure test
+                            </span>
+                        </div>
+
+                        <h3>
+                            Repeated-Cycle Evaluation
+                        </h3>
+
+                        <p class="architecture-subtitle">
+                            Track progressive vacuum generation
+                        </p>
+
+                        <p>
+                            A 3 mL syringe configuration was tested through
+                            five pressure cycles, with the prototype state
+                            documented after every cycle.
+                        </p>
+
+                        <ul>
+                            <li>Five pressure cycles</li>
+                            <li>Maximum pressure of 900 psi</li>
+                            <li>Cycle-by-cycle documentation</li>
+                            <li>Contact-area comparison</li>
+                            <li>Pressure change measurement</li>
+                        </ul>
+
+                    </article>
+
+                </div>
+
+                <div class="design-flow">
+
+                    <span>Calibrate sensor</span>
+                    <b>→</b>
+                    <span>Measure initial pressure</span>
+                    <b>→</b>
+                    <span>Run five cycles</span>
+                    <b>→</b>
+                    <span>Measure regenerated vacuum</span>
+
+                </div>
+
+                <div class="visual-placeholder validation-placeholder">
+                    <span>
+                        Pressure measurement and cycle results
+                    </span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Burn-Wire System -->
+        <section class="detail-section detail-container">
+
+            <div class="detail-section-heading">
+
+                <p>06</p>
+
+                <h2>
+                    Compact Burn-Wire Release System
+                </h2>
+
+            </div>
+
+            <div class="detail-section-content">
+
+                <p>
+                    In parallel with the vacuum-regeneration work, I tested
+                    and redesigned a burn-wire system intended to release
+                    the tag after data collection.
+                </p>
+
+                <div class="demonstration-grid">
+
+                    <!-- Burn-wire test 1 -->
+                    <article class="demonstration-card">
+
+                        <div class="visual-placeholder demonstration-visual">
+                            <span>
+                                Burn-wire material tests
+                            </span>
+                        </div>
+
+                        <div class="demonstration-content">
+
+                            <span class="demonstration-number">
+                                01
+                            </span>
+
+                            <h3>
+                                Material and Setting Tests
+                            </h3>
+
+                            <p>
+                                Different wire materials, electrical settings,
+                                and mechanical connections were tested to
+                                compare burn time and failure location.
+                            </p>
+
+                            <div class="demonstration-values">
+                                <span>Material selection</span>
+                                <span>Burn-time measurement</span>
+                                <span>Failure-location control</span>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Burn-wire test 2 -->
+                    <article class="demonstration-card">
+
+                        <div class="visual-placeholder demonstration-visual">
+                            <span>
+                                Saltwater release test
+                            </span>
+                        </div>
+
+                        <div class="demonstration-content">
+
+                            <span class="demonstration-number">
+                                02
+                            </span>
+
+                            <h3>
+                                Saltwater Release Testing
+                            </h3>
+
+                            <p>
+                                A tag release test was conducted in water
+                                with approximately 3% salinity using a
+                                9 V electrical input.
+                            </p>
+
+                            <div class="demonstration-values">
+                                <span>Salinity: approximately 3%</span>
+                                <span>Voltage: 9 V</span>
+                                <span>Burn time: less than 1 minute</span>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Burn-wire test 3 -->
+                    <article class="demonstration-card">
+
+                        <div class="visual-placeholder demonstration-visual">
+                            <span>
+                                Compact burn-wire prototype
+                            </span>
+                        </div>
+
+                        <div class="demonstration-content">
+
+                            <span class="demonstration-number">
+                                03
+                            </span>
+
+                            <h3>
+                                Miniaturized Replaceable Design
+                            </h3>
+
+                            <p>
+                                A smaller plug-and-play version was developed
+                                to simplify replacement during expeditions
+                                and concentrate failure at the intended
+                                burn-wire location.
+                            </p>
+
+                            <div class="demonstration-values">
+                                <span>Compact packaging</span>
+                                <span>Replaceable component</span>
+                                <span>Field-reliability evaluation</span>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+                <p>
+                    The compact prototype exposed a difference between
+                    controlled laboratory behavior and field reliability.
+                    This result identified packaging, electrical connections,
+                    and environmental robustness as important requirements
+                    for the next design iteration.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Published System -->
+        <section class="detail-section detail-container">
+
+            <div class="detail-section-heading">
+
+                <p>07</p>
+
+                <h2>
+                    Published System Development
+                </h2>
+
+            </div>
+
+            <div class="detail-section-content">
+
+                <p>
+                    The project later developed from early syringe-based
+                    prototypes into a linked-cylinder assembly with a
+                    dedicated valve block, pressure logger, theoretical
+                    model, and whale-tag integration.
+                </p>
+
+                <p>
+                    The final published system used pressure changes during
+                    simulated dive cycles to operate as a passive diaphragm
+                    pump. Experimental results confirmed vacuum regeneration
+                    with both air and water as the working fluid.
+                </p>
+
+                <div class="design-example">
+
+                    <div>
+                        <strong>881%</strong>
+                        <span>Maximum regeneration using air</span>
+                    </div>
+
+                    <div>
+                        <strong>48.4%</strong>
+                        <span>Regeneration using water</span>
+                    </div>
+
+                    <div>
+                        <strong>67.5%</strong>
+                        <span>Integrated prototype after ten cycles</span>
+                    </div>
+
+                </div>
+
+                <div class="validation-grid">
+
+                    <article class="validation-card">
+
+                        <h3>
+                            Linked-Cylinder Mechanism
+                        </h3>
+
+                        <p>
+                            Coupled driving and pumping cylinders converted
+                            ambient-pressure changes into controlled pumping
+                            motion.
+                        </p>
+
+                        <div class="validation-tags">
+                            <span>Pneumatic Design</span>
+                            <span>Pressure-Driven Actuation</span>
+                        </div>
+
+                    </article>
+
+
+                    <article class="validation-card">
+
+                        <h3>
+                            One-Way Valve Block
+                        </h3>
+
+                        <p>
+                            A dedicated valve system controlled fluid transfer
+                            between the suction cup, pumping chamber, and
+                            external environment.
+                        </p>
+
+                        <div class="validation-tags">
+                            <span>Valve Selection</span>
+                            <span>Fluid Routing</span>
+                        </div>
+
+                    </article>
+
+
+                    <article class="validation-card">
+
+                        <h3>
+                            Pressure-Tank Validation
+                        </h3>
+
+                        <p>
+                            Controlled pressure cycles reproduced the
+                            hydrostatic conditions experienced during repeated
+                            whale dives.
+                        </p>
+
+                        <div class="validation-tags">
+                            <span>High-Pressure Testing</span>
+                            <span>Repeated Trials</span>
+                        </div>
+
+                    </article>
+
+
+                    <article class="validation-card">
+
+                        <h3>
+                            Whale-Tag Integration
+                        </h3>
+
+                        <p>
+                            The vacuum-regeneration assembly was packaged
+                            inside a prototype tag body and connected to
+                            the suction-cup attachment system.
+                        </p>
+
+                        <div class="validation-tags">
+                            <span>System Integration</span>
+                            <span>Prototype Packaging</span>
+                        </div>
+
+                    </article>
+
+                </div>
+
+                <div class="visual-placeholder validation-placeholder">
+                    <span>
+                        Final published vacuum-regeneration system
+                    </span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- My Contribution -->
+        <section class="detail-section detail-container">
+
+            <div class="detail-section-heading">
+
+                <p>08</p>
+
+                <h2>
+                    My Contribution
+                </h2>
+
+            </div>
+
+            <div class="detail-section-content">
+
+                <p>
+                    As a visiting researcher and publication coauthor,
+                    I focused on early experimental prototyping, high-pressure
+                    validation, pressure measurement, design comparison, and
+                    controlled-release development.
+                </p>
+
+                <div class="contribution-grid">
+
+                    <div class="contribution-item">
+
+                        <span>01</span>
+
+                        <p>
+                            Translated the existing vacuum-regeneration
+                            concept into testable syringe-based prototypes.
+                        </p>
+
+                    </div>
+
+
+                    <div class="contribution-item">
+
+                        <span>02</span>
+
+                        <p>
+                            Built and compared same-direction and
+                            opposite-direction piston arrangements.
+                        </p>
+
+                    </div>
+
+
+                    <div class="contribution-item">
+
+                        <span>03</span>
+
+                        <p>
+                            Conducted repeated high-pressure experiments
+                            at pressures up to 900 psi.
+                        </p>
+
+                    </div>
+
+
+                    <div class="contribution-item">
+
+                        <span>04</span>
+
+                        <p>
+                            Compared prototypes with and without vacuum
+                            regeneration and evaluated 1, 3, and 5 mL
+                            chamber volumes.
+                        </p>
+
+                    </div>
+
+
+                    <div class="contribution-item">
+
+                        <span>05</span>
+
+                        <p>
+                            Integrated a pressure sensor, valve, and tubing
+                            system to quantify regenerated vacuum.
+                        </p>
+
+                    </div>
+
+
+                    <div class="contribution-item">
+
+                        <span>06</span>
+
+                        <p>
+                            Documented cycle-by-cycle system behavior and
+                            identified configuration and volume tradeoffs.
+                        </p>
+
+                    </div>
+
+
+                    <div class="contribution-item">
+
+                        <span>07</span>
+
+                        <p>
+                            Tested burn-wire materials, electrical settings,
+                            saltwater operation, and release time.
+                        </p>
+
+                    </div>
+
+
+                    <div class="contribution-item">
+
+                        <span>08</span>
+
+                        <p>
+                            Developed and evaluated a compact, replaceable
+                            burn-wire prototype for expedition use.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Engineering Outcomes and Tools -->
+        <section class="detail-section detail-container">
+
+            <div class="detail-section-heading">
+
+                <p>09</p>
+
+                <h2>
+                    Engineering Outcomes and Tools
+                </h2>
+
+            </div>
+
+            <div class="detail-section-content">
+
+                <div class="outcomes-tools-grid">
+
+                    <!-- Engineering outcomes -->
+                    <div class="outcomes-column">
+
+                        <h3>
+                            Engineering Outcomes
+                        </h3>
+
+                        <ul class="outcomes-list">
+
+                            <li>
+                                Demonstrated early feasibility of using
+                                pressure cycles to improve suction attachment.
+                            </li>
+
+                            <li>
+                                Compared multiple pneumatic configurations
+                                under controlled high-pressure conditions.
+                            </li>
+
+                            <li>
+                                Identified the effect of pneumatic chamber
+                                volume on prototype performance.
+                            </li>
+
+                            <li>
+                                Added quantitative pressure measurement to
+                                an initially visual evaluation process.
+                            </li>
+
+                            <li>
+                                Evaluated controlled-release performance in
+                                saltwater conditions.
+                            </li>
+
+                            <li>
+                                Identified laboratory-to-field reliability
+                                limitations for the compact release prototype.
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+                    <!-- Tools and methods -->
+                    <div class="tools-column">
+
+                        <h3>
+                            Tools and Methods
+                        </h3>
+
+                        <div class="tool-tags">
+
+                            <span>Pneumatic Prototyping</span>
+                            <span>Pressure Vessel Testing</span>
+                            <span>Suction-Cup Characterization</span>
+                            <span>Pressure Sensor Integration</span>
+                            <span>Sensor Calibration</span>
+                            <span>Voltage-to-Pressure Conversion</span>
+                            <span>Valves, Tubing, and Fittings</span>
+                            <span>Repeated-Cycle Testing</span>
+                            <span>Underwater Testing</span>
+                            <span>Burn-Wire Testing</span>
+                            <span>Rapid Prototyping</span>
+                            <span>Experimental Documentation</span>
+                            <span>Design Iteration</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Publication -->
+                <div class="publication-panel">
+
+                    <div class="publication-information">
+
+                        <span class="publication-label">
+                            Publication
+                        </span>
+
+                        <h3>
+                            Passive Vacuum Regeneration for
+                            Suction-Based Marine Adhesion Devices
+                        </h3>
+
+                        <p>
+                            Germain Meyer, Daniel M. Vogt,
+                            Xinyi Yang, and Robert J. Wood
+                        </p>
+
+                        <p>
+                            <em>IEEE Journal of Oceanic Engineering</em>,
+                            50(4), 2468-2478, 2025
+                        </p>
+
+                    </div>
+
+                    <a
+                        class="detail-button detail-button-primary"
+                        href="https://doi.org/10.1109/JOE.2025.3595607"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        View Publication ↗
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="detail-footer">
+
+        <div class="detail-container">
+
+            <a class="detail-back-link" href="../index.html#projects">
+                ← Back to Engineering Projects
+            </a>
+
+            <p>© 2026 Xinyi Yang</p>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
