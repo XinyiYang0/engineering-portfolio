@@ -87,7 +87,34 @@ img {
     margin-bottom: 0;
 }
 
+.hero-cv-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    padding: 0.75rem 1.25rem;
+    border: 1px solid currentColor;
+    border-radius: 999px;
+    color: inherit;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
+}
 
+.hero-cv-link:hover {
+    background-color: currentColor;
+    color: var(--background-color, #ffffff);
+    transform: translateY(-2px);
+}
+
+.hero-cv-link:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 4px;
+}
 /* Profile photo */
 
 .hero-photo {
